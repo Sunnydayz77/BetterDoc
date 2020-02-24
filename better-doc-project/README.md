@@ -1,0 +1,3 @@
+#BetterDoc
+
+Title: BetterDoc
