@@ -2,7 +2,8 @@
 
 Title: BetterDoc
 
-https://gph.is/28PqX3U
+Funny cheetah gif: https://gph.is/28PqX3U
+But a Baby Yoda gif is much better: https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif
 
 Decription: BetterDoc is an app that details provider information to the user as well as practice locations near the user. The BetterDoc app will describe if the practices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours. There will be a third navigation link that basically describes all the various specialties that a doctor may have if users wish to understand more about the complexties of specialties in the medical system and are stuck on what to search for. Post MVP, I plan to make a feature where users can login and save providers/practices that they wish to explore further and so that they have an address book all in one place for future reference. If there is time, I would also like to locate another API that would display health quotes and helpful information on the front page.
 
@@ -12,12 +13,16 @@ Image of wireframe via Imgur -->
 
 Component Heirarchy: 
   -Main page
+    |
     -->About section and health quote (function components)
   -Provider information section
+    |
     -->search bar/button and container for provider information(utilizing a class component)
   -Practice information
+    |
     -->search bar/button and container for practice information(utilizing a class component)
   -Specialty definitions
+    |
     -->search bar/button that displays all specialty information(utilizing a function component)
 
 
