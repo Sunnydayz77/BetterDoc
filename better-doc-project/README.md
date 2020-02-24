@@ -2,7 +2,7 @@
 
 Title: BetterDoc
 
-<iframe src="https://giphy.com/embed/Nh1vXTd393E6k" width="480" height="248" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Nh1vXTd393E6k">via GIPHY</a></p>
+https://gph.is/28PqX3U
 
 Decription: BetterDoc is an app that details provider information to the user as well as practice locations near the user. The BetterDoc app will describe if the practices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours. There will be a third navigation link that basically describes all the various specialties that a doctor may have if users wish to understand more about the complexties of specialties in the medical system and are stuck on what to search for. Post MVP, I plan to make a feature where users can login and save providers/practices that they wish to explore further and so that they have an address book all in one place for future reference. If there is time, I would also like to locate another API that would display health quotes and helpful information on the front page.
 
