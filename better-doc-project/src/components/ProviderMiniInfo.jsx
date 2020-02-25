@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class ProviderDetails extends Component {
+export default class ProviderMiniInfo extends Component {
   render() {
     return (
       <div>
-        <h1>Provider Details</h1>
+        <h1>Provider Mini Info</h1>
       </div>
     )
   }

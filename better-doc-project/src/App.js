@@ -6,7 +6,7 @@ import MainContainer from './components/MainContainer'
 function App() {
   return (
     <div className="App">
-      <MainHeader className="App-header" />
+      <MainHeader />
       <MainContainer />
     </div>
   );

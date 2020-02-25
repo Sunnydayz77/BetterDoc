@@ -48,9 +48,9 @@ MVP:
 -Utilize high-quality, semantic variable names.
 -Follow camelCase and kebab-case conventions.
 -Remove unnecessary boilerplate React files and code.
--Remove all console.logs and commented out code.
--Host the BetterDoc app on Surge.
+-Remove all console.logs and commented out code when submitting project.
 -Have GitHub commits every day.
+-Host the BetterDoc app on Surge.
 
 
 Post-MVP:
