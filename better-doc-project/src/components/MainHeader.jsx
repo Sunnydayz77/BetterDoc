@@ -6,6 +6,8 @@ export default function MainHeader() {
   return (
     <header>
       <>
+        <h1>BetterDoc</h1>
+        <h2>A Better Way To Search For Healthcare</h2>
         <div className="links">
           <nav>
             <NavLink
@@ -31,8 +33,6 @@ export default function MainHeader() {
             </NavLink>
           </nav>
         </div>
-
-       
       </>
     </header>
   )

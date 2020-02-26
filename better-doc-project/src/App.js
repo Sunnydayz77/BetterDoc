@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import MainHeader from './components/MainHeader'
 import MainContainer from './components/MainContainer'
+import ProviderContainer from './components/ProviderContainer';
 
 function App() {
   return (
