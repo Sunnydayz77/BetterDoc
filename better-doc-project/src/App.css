@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* 
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -9,14 +9,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-}
+} */
 
 header {
   background-image: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-  height: 300px;
+  height: 400px;
+  width: cover;
   background-size: cover;
   background-position: center;
   align-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .links {
@@ -26,6 +28,10 @@ header {
   align-content: flex-end;
 }
 
+a:hover {
+  color: grey;
+}
+
 a:link {
   text-decoration: none;
   margin: 5%;
@@ -33,23 +39,26 @@ a:link {
   align-content: flex-end;
 }
 
-a:hover {
-  color: grey;
+
+h1, h2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: purple;
+  margin: auto;
 }
+
 
 
 .navigationBar {
   list-style: none;
   display: flex;
-  margin: 5%;
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: flex-end;
 }
 
 div.links {
   display: inline;
-  align-items: flex-start;
+  align-items: flex-end;
+
 }
 
 nav {
@@ -58,3 +67,9 @@ nav {
   font-weight: 800;
   font-size: larger;
 }
+
+/* .doc-card {
+  border-radius: 1px solid black;
+} */
+
+
