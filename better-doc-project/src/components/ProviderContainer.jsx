@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import ProviderMiniInfo from './ProviderMiniInfo'
 import ProviderSearch from './ProviderSearch'
+import ProviderDetails from './ProviderDetails'
 import
 {
   Route
@@ -66,29 +67,33 @@ export default class ProviderContainer extends Component {
 
 render() {
   return (
-          <>
-              <div className="container">
-                
+      <>
+          <div className="container">
+          <Route exact path={"/ProviderContainer"} render={(props) =>
+        <>
+          <h3>Provider Search</h3>
+          <h4>~Search based on provider name, location, insurance accepted, and provider specialty~</h4>
+            <ProviderSearch
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit}
+              value={this.state.searchQuery}
+              name="searchQuery"
+            />
               <ProviderMiniInfo docs={this.state.docs} />
-              
-              <ProviderSearch
-                onChange={this.handleChange}
-                onSubmit={this.handleSubmit}
-                value={this.state.searchQuery}
-                name="searchQuery"
+              </>
+          }/>
+      
+          
+          
+            <Route path={"/ProviderContainer/details/:uid"} render={(props) =>
+            <ProviderDetails
+                docs={this.state.docs}
+                {...props}
               />
-            
-{/* 
-              <Route path={"ProviderDetails/:profile"} render={(props) =>
-                <ProviderDetails
-                  doc={this.state.docs}
-                  {...props}
-                />
-              }>
-
-                </Route> */}
-              </div>
-          </>
-        )
+            } />
+        
+          </div>
+      </>
+    )
   }
 }
