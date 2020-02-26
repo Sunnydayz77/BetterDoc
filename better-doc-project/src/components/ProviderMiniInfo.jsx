@@ -6,10 +6,9 @@ const ProviderMiniInfo = ({ docs }) => {
   //console.log(docs)
   return (
   <>
-    { docs.length>0 &&
-        docs.map((doc, index) => {
+    { docs.length>0 && docs.map((doc, index) => {
       return(
-          <div className="doc-card">
+        <div key={index} className="doc-card">
             
             {/* <img src={doc.profile.image_url} alt="provider picture"/> */}
             
@@ -24,8 +23,8 @@ const ProviderMiniInfo = ({ docs }) => {
                 )}
             </div>
             
-            <Link key={index} to={`./ProviderDetails/${doc.uid}`} className="details">
-            <button to={`./ProviderDetails/${doc.uid}`} className="details">More Information</button>
+            <Link to={`/ProviderContainer/details/${doc.uid}`}>
+              <button>More Information</button>
             </Link>
         </div>
       )

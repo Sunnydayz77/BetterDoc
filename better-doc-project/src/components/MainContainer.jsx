@@ -18,7 +18,6 @@ export default class MainContainer extends Component {
             <h3>"Quote" ~Person</h3>
           </Route>
           <Route path={"/ProviderContainer"} component={ProviderContainer}/>
-          <Route path={"/ProviderDetails"} component={ProviderDetails} />
           <Route path={"/SpecialtyContainer"} component={SpecialtyContainer} />
           {/* <Route path={"/SpecialtySearch"} component={SpecialtySearch} />
           <Route path={"/SpecialtyMoreInfo"} component={SpecialtyMoreInfo} /> */}
