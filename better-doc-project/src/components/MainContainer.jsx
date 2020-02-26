@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import ProviderContainer from "./ProviderContainer";
-import ProviderSearch from "./ProviderSearch";
-import ProviderMiniInfo from "./ProviderMiniInfo";
 import ProviderDetails from "./ProviderDetails";
 import SpecialtyContainer from "./SpecialtyContainer";
-import SpecialtySearch from "./SpecialtySearch";
-import SpecialtyMoreInfo from "./SpecialtyMoreInfo";
+// import SpecialtySearch from "./SpecialtySearch";
+// import SpecialtyMoreInfo from "./SpecialtyMoreInfo";
 import NoMatch from "./NoMatch";
 
 export default class MainContainer extends Component {

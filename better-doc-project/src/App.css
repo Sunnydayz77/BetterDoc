@@ -14,11 +14,11 @@
 header {
   background-image: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   height: 400px;
-  width: cover;
   background-size: cover;
   background-position: center;
-  align-content: flex-end;
+  /* align-content: flex-end; */
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 11px 19px 8px black;
 }
 
 .links {
@@ -32,21 +32,33 @@ a:hover {
   color: grey;
 }
 
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 a:link {
   text-decoration: none;
-  margin: 5%;
+  margin: 10%;
   color: black;
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-direction: row; */
   align-content: flex-end;
 }
 
 
+
 h1, h2 {
   background-color: rgba(255, 255, 255, 0.6);
-  color: purple;
+  color: rebeccapurple;
   margin: auto;
+  font-weight: 900;
+  font-size: 32px;
 }
-
-
 
 .navigationBar {
   list-style: none;
@@ -64,7 +76,7 @@ div.links {
 nav {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
-  font-weight: 800;
+  font-weight: 700;
   font-size: larger;
 }
 
@@ -72,4 +84,7 @@ nav {
   border-radius: 1px solid black;
 } */
 
+.container {
+  padding: 30px;
+}
 
