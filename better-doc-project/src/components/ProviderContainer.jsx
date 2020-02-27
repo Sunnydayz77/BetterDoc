@@ -79,14 +79,16 @@ render() {
               value={this.state.searchQuery}
               name="searchQuery"
             />
-              <ProviderMiniInfo docs={this.state.docs} />
-              </>
+        
+
+            <ProviderMiniInfo className="miniInfo" docs={this.state.docs} />
+            </>
           }/>
       
           
           
             <Route path={"/ProviderContainer/details/:uid"} render={(props) =>
-            <ProviderDetails
+            <ProviderDetails className="details"
                 docs={this.state.docs}
                 {...props}
               />
@@ -97,3 +99,5 @@ render() {
     )
   }
 }
+
+

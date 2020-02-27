@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-color: black;
+}
 /* 
 .App-header {
   min-height: 100vh;
@@ -19,6 +23,8 @@ header {
   /* align-content: flex-end; */
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 11px 19px 8px black;
+  display: flex;
+  flex-direction: column;
 }
 
 .links {
@@ -26,6 +32,7 @@ header {
   margin: 2%;
   font-size: 1em;
   align-content: flex-end;
+  margin-top: auto;
 }
 
 a:hover {
@@ -44,9 +51,9 @@ a:link {
   text-decoration: none;
   margin: 10%;
   color: black;
-  /* display: flex;
+  
   justify-content: space-evenly;
-  flex-direction: row; */
+  flex-direction: row;
   align-content: flex-end;
 }
 
@@ -55,16 +62,19 @@ a:link {
 h1, h2 {
   background-color: rgba(255, 255, 255, 0.6);
   color: rebeccapurple;
-  margin: auto;
   font-weight: 900;
-  font-size: 32px;
+  padding: 20px;
+}
+
+h3, h4, h5, p {
+  color: white;
 }
 
 .navigationBar {
   list-style: none;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-content: flex-end; */
 }
 
 div.links {
@@ -78,6 +88,8 @@ nav {
   padding: 20px;
   font-weight: 700;
   font-size: larger;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 
 /* .doc-card {
@@ -86,5 +98,10 @@ nav {
 
 .container {
   padding: 30px;
+  /* margin: auto; */
 }
 
+/* .miniInfo {
+  padding: 30px;
+  margin: auto;
+} */

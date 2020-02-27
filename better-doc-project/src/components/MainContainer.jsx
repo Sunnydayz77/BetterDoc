@@ -13,8 +13,8 @@ export default class MainContainer extends Component {
       <main className="MainContent">
         <Switch>
           <Route exact path={"/"}>
-            <h1>BetterDoc</h1>
-            <h2>A Better Way To Search For Healthcare</h2>
+            {/* <h1>BetterDoc</h1>
+            <h2>A Better Way To Search For Healthcare</h2> */}
             <h3>"Quote" ~Person</h3>
           </Route>
           <Route path={"/ProviderContainer"} component={ProviderContainer}/>
