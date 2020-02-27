@@ -9,25 +9,52 @@ const ProviderMiniInfo = ({ docs }) => {
   return (
   <>  
     {
-      docs.length > 0 ?
+      docs.length > 0 &&
   
     (docs.map((doc, index) => {
       return (
         <>
           <div key={index} className="doc-card">
             
-            <img src={doc.profile.image_url} alt="provider picture" onError={addDefaultSource} /> 
+            <img src={doc.profile.image_url} alt="provider picture" onError={addDefaultSource} className="providerPic"/> 
 
             <h4 className="name">{doc.profile.first_name} {doc.profile.middle_name} {doc.profile.last_name}, {doc.profile.title}</h4>
             
             <h5>NPI: {doc.npi}</h5>
 
-            <div className="specialties">
-              <h5>Specialties:</h5>
-              {doc.specialties.map(specialty =>
-                <h5>{specialty.name}</h5>
+            {doc.practices &&
+              <div className="location">
+                <h5>Location:</h5>
+                {doc.practices.map(practice =>
+                  <h5>{practice.visit_address.city}</h5>
                 )}
+              </div>
+            }
+
+            <div className="specialties">
+            <h5>Specialties:</h5>
+            {doc.specialties.map(specialty =>
+              <h5>{specialty.name}</h5>
+              )}
             </div>
+{/* 
+            {doc.insurances &&
+            <div className="insurances">
+            <h5>Insurances Accepted:</h5>
+            {doc.insurances.map(insurance =>
+              <h5>{insurance.insurance_provider.name}</h5>
+              )}
+            </div>
+            }
+              
+            {doc.insurances &&
+            <div>
+            {doc.insurances.map(insurance =>
+              <h5>{insurance.insurance_plan.name}</h5>
+              )}
+            </div> 
+            } */}
+            
             
             <Link to={`/ProviderContainer/details/${doc.uid}`}>
               <button>More Information</button>
@@ -37,9 +64,6 @@ const ProviderMiniInfo = ({ docs }) => {
       )
     })
     )
-   
-  : 
-  (< img src = 'https://media.giphy.com/media/5h7dW8ceuJX5C/giphy.gif' alt = "loading spinner"/>)
   }
     </>
 )}

@@ -15,7 +15,8 @@ export default class ProviderContainer extends Component {
     this.state = {
       docs: [],
       searchQuery: '',
-      containers:[]
+      containers: [],
+      loading:false
     }
   }
 
@@ -48,18 +49,22 @@ export default class ProviderContainer extends Component {
   }
 
 
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault()
     if (!this.state.searchQuery) {
       alert('Nothing is being searched!')
     } else if (this.state.containers.includes(this.state.searchQuery)) {
       alert('Already Exists')
     } else {
-      this.fetchDocs()
+      this.setState({
+        loading:true
+      })
+      await this.fetchDocs()
       this.setState(
-        state => ({
-          containers: [this.state.searchQuery, ...state.containers],
-          searchQuery: ''
+        prevState => ({
+          containers: [prevState.searchQuery, ...prevState.containers],
+          searchQuery: '',
+          loading:false
         }),
       )
     }
@@ -73,28 +78,27 @@ render() {
         <>
           <h3>Provider Search</h3>
           <h4>~Search based on provider name, location, insurance accepted, and provider specialty~</h4>
-            <ProviderSearch
-              onChange={this.handleChange}
-              onSubmit={this.handleSubmit}
-              value={this.state.searchQuery}
-              name="searchQuery"
+            
+          <ProviderSearch
+            onChange={this.handleChange}
+            onSubmit={this.handleSubmit}
+            value={this.state.searchQuery}
+            name="searchQuery"
             />
-        
+            {this.state.loading  &&  <img src = 'https://media.giphy.com/media/VX7yEoXAFf8as/giphy.gif' alt = "loading spinner"/>}
 
-            <ProviderMiniInfo className="miniInfo" docs={this.state.docs} />
-            </>
-          }/>
+          <ProviderMiniInfo className="miniInfo" docs={this.state.docs} />
+        </>
+        }/>
       
-          
-          
-            <Route path={"/ProviderContainer/details/:uid"} render={(props) =>
-            <ProviderDetails className="details"
-                docs={this.state.docs}
-                {...props}
-              />
-            } />
+          <Route path={"/ProviderContainer/details/:uid"} render={(props) =>
+          <ProviderDetails className="details"
+              docs={this.state.docs}
+              {...props}
+          />
+        }/>
         
-          </div>
+        </div>
       </>
     )
   }

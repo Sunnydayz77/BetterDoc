@@ -9,7 +9,25 @@ const Docs = props => {
   return (
     <div className="doc-card">
       <h4 className="name">{currentDoc.profile.first_name} {currentDoc.profile.middle_name} {currentDoc.profile.last_name}, {currentDoc.profile.title}</h4>
-      <p>{currentDoc.profile.bio}</p>
+      <p>Bio: {currentDoc.profile.bio}</p>
+
+
+      {currentDoc.insurances &&
+        <div className="insurances">
+          <h5>Insurances Accepted:</h5>
+          {currentDoc.insurances.map(insurance =>
+          <h5>{insurance.insurance_provider.name}</h5>
+          )}
+        </div>
+      }
+      
+      {currentDoc.insurances &&
+      <div>
+        {currentDoc.insurances.map(insurance =>
+        <h5>{insurance.insurance_plan.name}</h5>
+        )}
+      </div> 
+      }
     </div>
   );
 };

@@ -10,12 +10,16 @@ import NoMatch from "./NoMatch";
 export default class MainContainer extends Component {
   render() {
     return (
-      <main className="MainContent">
+      <main className="mainContent">
         <Switch>
           <Route exact path={"/"}>
+          <div className="home">
+
+          </div>
             {/* <h1>BetterDoc</h1>
             <h2>A Better Way To Search For Healthcare</h2> */}
-            <h3>"Quote" ~Person</h3>
+            {/* <h3>"Quote" ~Person</h3> */}
+          
           </Route>
           <Route path={"/ProviderContainer"} component={ProviderContainer}/>
           <Route path={"/SpecialtyContainer"} component={SpecialtyContainer} />
@@ -23,6 +27,9 @@ export default class MainContainer extends Component {
           <Route path={"/SpecialtyMoreInfo"} component={SpecialtyMoreInfo} /> */}
           <Route exact path={"*"} component={NoMatch} />
         </Switch>
+
+
+        
       </main>
     );
   }

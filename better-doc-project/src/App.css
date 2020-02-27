@@ -3,8 +3,16 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1F1C1F;
+  word-wrap: normal;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.home {
+  background-image: url('https://media.giphy.com/media/l1J9ENegnLn0JxY4g/giphy.gif');
+  min-height: 80vh;
+}
+
 /* 
 .App-header {
   min-height: 100vh;
@@ -33,6 +41,7 @@ header {
   font-size: 1em;
   align-content: flex-end;
   margin-top: auto;
+  word-wrap: normal;
 }
 
 a:hover {
@@ -51,14 +60,13 @@ a:link {
   text-decoration: none;
   margin: 10%;
   color: black;
-  
   justify-content: space-evenly;
   flex-direction: row;
   align-content: flex-end;
 }
-
-
-
+h1 {
+  font-size: 40px;
+}
 h1, h2 {
   background-color: rgba(255, 255, 255, 0.6);
   color: rebeccapurple;
@@ -77,11 +85,6 @@ h3, h4, h5, p {
   align-content: flex-end; */
 }
 
-div.links {
-  display: inline;
-  align-items: flex-end;
-
-}
 
 nav {
   background-color: rgba(255, 255, 255, 0.6);
@@ -90,6 +93,7 @@ nav {
   font-size: larger;
   justify-content: space-between;
   align-content: flex-end;
+  word-wrap: normal;
 }
 
 /* .doc-card {
@@ -104,4 +108,24 @@ nav {
 /* .miniInfo {
   padding: 30px;
   margin: auto;
+} */
+
+.providerPic {
+  max-width: 125px;
+}
+
+.doc-card {
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.noMatch {
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/YyKPbc5OOTSQE/giphy.gif');
+  min-height: 80vh;
+}
+/* 
+.mainContent {
+  background-size: cover;
+  margin: 0;
 } */
