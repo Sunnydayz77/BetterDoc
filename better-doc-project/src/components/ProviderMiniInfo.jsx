@@ -50,7 +50,7 @@ const ProviderMiniInfo = ({ docs }) => {
     })
     )
   }
-    </>
+</>
 )}
   
   

@@ -9,6 +9,9 @@ const Docs = props => {
   return (
     <div className="doc-card">
       <h4 className="name">{currentDoc.profile.first_name} {currentDoc.profile.middle_name} {currentDoc.profile.last_name}, {currentDoc.profile.title}</h4>
+
+      <h5>NPI: {currentDoc.npi}</h5>
+
       <p>Bio: {currentDoc.profile.bio}</p>
 
       {currentDoc.practices &&
@@ -35,18 +38,18 @@ const Docs = props => {
         <div className="insurances">
           <h5>Insurances Accepted:</h5>
           {currentDoc.insurances.map(insurance =>
-          <h5>{insurance.insurance_provider.name} {insurance.insurance_plan.name}</h5>
+            <h5>{insurance.insurance_provider.name} {insurance.insurance_plan.name}</h5>
           )}
         </div>
       }
       
 
-      <div className="specialties">
-      <h5>Specialties:</h5>
-        {currentDoc.specialties.map(specialty =>
-          <h5>{specialty.name}</h5>
+        <div className="specialties">
+          <h5>Specialties:</h5>
+          {currentDoc.specialties.map(specialty =>
+            <h5>{specialty.name}</h5>
           )}
-      </div>
+        </div>
     </div>
   );
 };
@@ -54,26 +57,3 @@ const Docs = props => {
 export default Docs;
 
 
-
-
-// import React, { Component } from 'react'
-
-// export default class ProviderDetails extends Component {
-//   constructor() {
-//     super()
-//     this.state = {
-//      docs: this.props.match.params
-//     }
-// }
-
-
-//   render() {
-//     return (
-//       <div>
-//         <h1>Provider Details</h1>
-//         {/* <h4 className="name">{docs.profile.first_name} {docs.profile.middle_name} {docs.profile.last_name}, {docs.profile.title}</h4>
-//         <h5>{docs.profile.bio}</h5> */}
-//       </div>
-//     )
-//   }
-// }
