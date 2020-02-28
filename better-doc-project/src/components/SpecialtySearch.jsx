@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SpecialtySearch extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Specialty Search</h1>
-      </div>
-    )
-  }
+
+const SpecialtySearch = ({ onChange, onSubmit, name, value }) => {
+  return (
+    <form onSubmit={e => onSubmit(e)}>
+      <input
+        value={value}
+        onChange={e => onChange(e)}
+        name={name}
+        type="text"
+      />
+      <button type="submit">Search</button>
+    </form>
+  )
 }
+export default SpecialtySearch

@@ -6,14 +6,14 @@ Funny cheetah gif: https://gph.is/28PqX3U
 
 But a Baby Yoda gif is much better: https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif
 
-Decription: BetterDoc is an app that details provider information to the user based on name, location, insurances accepted, and provider specialty. The provider information tab will just list doctor's names and their locations along with a button for more information that links to a detailed container page. There will also be a third navigation link that basically describes all of the various specialties that a doctor may have if users wish to understand more about the complexities of specialties in the medical system and are stuck on what to search for. Post MVP, I hope to make a navigation tab that is specifically for practice locations near the user. This link would describe if the practices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours. Post-post MVP, I plan to make a feature where users can login and save providers/practices so they can have an address book all in one place for future reference. I would also like to locate another API that would display health quotes and helpful information on the front page.
+Decription: BetterDoc is an app that details provider information to the user based on name, location, insurances accepted, and provider specialty. The provider information tab lists doctor's names, their npi numbers, their locations, and their specialties. Each doctor has a button for more information that links to a detailed container page. There is also a third navigation link in the header that describes all of the various specialties that a doctor may have if users wish to understand more about the complexities of specialties in the medical system and if they're stuck on what to search for. Post MVP, I hope to make a navigation tab that is specifically for doctor's offices near the user. This link would describe if the offices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours. Post-post MVP, I plan to make a feature where users can login and save providers/practices so they can have an address book all in one place for future reference. 
 
 Wireframes: Interactive display on Marvel App --> https://marvelapp.com/dhj69hh
 
 Component Heirarchy: 
   -Main page
     |
-    -->About section and health quote (function components)
+    -->Front page with routing links (function and class components)
 
   -Provider information section
     |
@@ -72,16 +72,16 @@ Technologies used:
 -Includes hover ability over links
 -loading gif renders while searching for data
 -404 page included when links are mistyped
--links in the footer open up in a new page instead of rendering over the NutriMate website
 -Unsplash was used for images
--Giph was used for moving giphy images
+-Giphy was used for moving giphy images
 -Surge was used for website hosting
 
 Relevant instructions for viewers: 
 BetterDoc is an app that details provider information to the user. You can type in any provider's name, any location, type of insurance that the user may have, or provider specialty and the page will render further information. There is a basic information page under "Provider Information" and then the user can click the button to display detailed information such as practice addresses and specific insurance plans that are accepted.
 
 Unsolved problems: 
-
+1.  My provider search is returning extraneous people/information. For instance, if I search for a provider by the name of "Smith" the search will return providers who don't have the name of "Smith", but have "Smith" listed in their bios somewhere.
+2. The data for the specialties API seems to just return the entire list of specialty definitions. You aren't able to search to a specific definition. I will have to scale back my code to either just display all of the specialty information or code it so that it filters through the data after mapping through the data.
 
 
 Link to live site: 

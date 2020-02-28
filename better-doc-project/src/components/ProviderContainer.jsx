@@ -30,8 +30,6 @@ export default class ProviderContainer extends Component {
         const docs = await Axios.get(
           `https://api.betterdoctor.com/2016-03-01/doctors?query=${this.state.searchQuery}&sort=best-match-desc&skip=0&limit=20&user_key=${API_TOKEN}`
         )
-       // console.log(docs.data.data)
-        //console.log(docs.data.data.npi)
         const docData=docs.data.data
         console.log(docData)
         this.setState({

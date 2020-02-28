@@ -10,16 +10,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-} */
-
 /*--------- Header -------------*/
 
 header {
@@ -27,7 +17,6 @@ header {
   height: 400px;
   background-size: cover;
   background-position: center;
-  /* align-content: flex-end; */
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 11px 19px 8px black;
   display: flex;
@@ -49,7 +38,7 @@ h1, h2 {
 
 .links {
   text-decoration: none;
-  /* margin: 2%; */
+  margin: 2%;
   font-size: 1em;
   align-content: flex-end;
   margin-top: auto;
@@ -79,9 +68,6 @@ a:link {
 
 .navigationBar {
   list-style: none;
-  /* display: flex;
-  justify-content: space-between;
-  align-content: flex-end; */
 }
 
 nav {
@@ -109,13 +95,8 @@ h3, h4, h5, p {
 
 .container {
   padding: 30px;
-  /* margin: auto; */
 }
 
-/* .miniInfo {
-  padding: 30px;
-  margin: auto;
-} */
 
 .providerPic {
   max-width: 125px;
@@ -139,7 +120,6 @@ h3, h4, h5, p {
   min-height: 80vh;
 }
 
-
 /*--------- Footer -------------*/
 
 .footer {
@@ -151,10 +131,6 @@ h3, h4, h5, p {
   padding: 20px;
   flex: end;
 }
-/* 
-h3.footer {
-  margin: 1%;
-} */
 
 
 /*--------- iPad Responsiveness -------------*/
