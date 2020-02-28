@@ -72,9 +72,8 @@ Technologies used:
 -Includes hover ability over links
 -loading gif renders while searching for data
 -404 page included when links are mistyped
--links in the footer open up in a new page instead of rendering over the NutriMate website
 -Unsplash was used for images
--Giph was used for moving giphy images
+-Giphy was used for moving giphy images
 -Surge was used for website hosting
 
 Relevant instructions for viewers: 

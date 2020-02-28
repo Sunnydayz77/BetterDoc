@@ -19,14 +19,14 @@ const ProviderMiniInfo = ({ docs }) => {
             
             <img src={doc.profile.image_url} alt="provider picture" onError={addDefaultSource} className="providerPic"/> 
 
-            <h4 className="name">{doc.profile.first_name} {doc.profile.middle_name} {doc.profile.last_name}, {doc.profile.title}</h4>
+            <h3 className="name">{doc.profile.first_name} {doc.profile.middle_name} {doc.profile.last_name}, {doc.profile.title}</h3>
             
-            <h5>NPI: {doc.npi}</h5>
+            <h3>NPI: {doc.npi}</h3>
 
             
             {doc.practices &&
               <div className="location">
-              <h5>Practice Locations: </h5>
+              <h3>Practice Locations: </h3>
                 {doc.practices.map(practice =>
                   <h5>{practice.visit_address.city}, {practice.visit_address.state} {practice.visit_address.zip}</h5>
                 )}
@@ -34,7 +34,7 @@ const ProviderMiniInfo = ({ docs }) => {
             }
 
             <div className="specialties">
-            <h5>Specialties:</h5>
+            <h3>Specialties:</h3>
             {doc.specialties.map(specialty =>
               <h5>{specialty.name}</h5>
               )}
