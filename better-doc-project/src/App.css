@@ -1,6 +1,18 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-color: #1F1C1F;
+  word-wrap: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-image: url('https://media.giphy.com/media/l1J9ENegnLn0JxY4g/giphy.gif');
+  min-height: 80vh;
+}
+
 /* 
 .App-header {
   min-height: 100vh;
@@ -19,6 +31,8 @@ header {
   /* align-content: flex-end; */
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 11px 19px 8px black;
+  display: flex;
+  flex-direction: column;
 }
 
 .links {
@@ -26,6 +40,8 @@ header {
   margin: 2%;
   font-size: 1em;
   align-content: flex-end;
+  margin-top: auto;
+  word-wrap: normal;
 }
 
 a:hover {
@@ -44,40 +60,41 @@ a:link {
   text-decoration: none;
   margin: 10%;
   color: black;
-  /* display: flex;
   justify-content: space-evenly;
-  flex-direction: row; */
+  flex-direction: row;
   align-content: flex-end;
 }
-
-
-
+h1 {
+  font-size: 40px;
+}
 h1, h2 {
   background-color: rgba(255, 255, 255, 0.6);
   color: rebeccapurple;
-  margin: auto;
   font-weight: 900;
-  font-size: 32px;
+  padding: 20px;
+}
+
+h3, h4, h5, p {
+  color: white;
 }
 
 .navigationBar {
   list-style: none;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-content: flex-end; */
 }
 
-div.links {
-  display: inline;
-  align-items: flex-end;
-
-}
 
 nav {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   font-weight: 700;
-  font-size: larger;
+  /* font-size: larger; */
+  justify-content: space-between;
+  align-content: flex-end;
+  word-wrap: normal;
+  /* width: 100%; */
 }
 
 /* .doc-card {
@@ -86,5 +103,30 @@ nav {
 
 .container {
   padding: 30px;
+  /* margin: auto; */
 }
 
+/* .miniInfo {
+  padding: 30px;
+  margin: auto;
+} */
+
+.providerPic {
+  max-width: 125px;
+}
+
+.doc-card {
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.noMatch {
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/YyKPbc5OOTSQE/giphy.gif');
+  min-height: 80vh;
+}
+/* 
+.mainContent {
+  background-size: cover;
+  margin: 0;
+} */
