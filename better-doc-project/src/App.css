@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 h1, h2 {
@@ -38,7 +38,6 @@ h1, h2 {
 
 .links {
   text-decoration: none;
-  margin: 2%;
   font-size: 1em;
   align-content: flex-end;
   margin-top: auto;
