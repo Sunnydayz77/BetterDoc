@@ -1,3 +1,5 @@
+/*--------- Full Page -------------*/
+
 .App {
   text-align: center;
 }
@@ -6,11 +8,6 @@ body {
   background-color: #1F1C1F;
   word-wrap: normal;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.home {
-  background-image: url('https://media.giphy.com/media/l1J9ENegnLn0JxY4g/giphy.gif');
-  min-height: 80vh;
 }
 
 /* 
@@ -22,6 +19,8 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
 } */
+
+/*--------- Header -------------*/
 
 header {
   background-image: url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
@@ -35,9 +34,22 @@ header {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+h1, h2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rebeccapurple;
+  font-weight: 900;
+  padding: 20px;
+}
+
+/*--------- Navigation Bar -------------*/
+
 .links {
   text-decoration: none;
-  margin: 2%;
+  /* margin: 2%; */
   font-size: 1em;
   align-content: flex-end;
   margin-top: auto;
@@ -61,21 +73,8 @@ a:link {
   margin: 10%;
   color: black;
   justify-content: space-evenly;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-content: flex-end;
-}
-h1 {
-  font-size: 40px;
-}
-h1, h2 {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: rebeccapurple;
-  font-weight: 900;
-  padding: 20px;
-}
-
-h3, h4, h5, p {
-  color: white;
 }
 
 .navigationBar {
@@ -85,21 +84,28 @@ h3, h4, h5, p {
   align-content: flex-end; */
 }
 
-
 nav {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   font-weight: 700;
-  /* font-size: larger; */
   justify-content: space-between;
   align-content: flex-end;
   word-wrap: normal;
-  /* width: 100%; */
 }
 
-/* .doc-card {
-  border-radius: 1px solid black;
-} */
+
+/*--------- Main Section -------------*/
+
+.home {
+  background-image: url('https://media.giphy.com/media/l1J9ENegnLn0JxY4g/giphy.gif');
+  min-height: 80vh;
+}
+
+h3, h4, h5, p {
+  color: white;
+}
+
+/*--------- Provider Pages -------------*/
 
 .container {
   padding: 30px;
@@ -120,13 +126,84 @@ nav {
   word-wrap: break-word;
 }
 
+/*--------- Search Bar -------------*/
+
+
+
+
+/*--------- 404 Page -------------*/
+
 .noMatch {
   background-position: center;
   background-image: url('https://media.giphy.com/media/YyKPbc5OOTSQE/giphy.gif');
   min-height: 80vh;
 }
+
+
+/*--------- Footer -------------*/
+
+.footer {
+  padding: 0px;
+  margin: 1% !important;
+}
+
+.footerMargin {
+  padding: 20px;
+  flex: end;
+}
 /* 
-.mainContent {
-  background-size: cover;
-  margin: 0;
+h3.footer {
+  margin: 1%;
 } */
+
+
+/*--------- iPad Responsiveness -------------*/
+
+@media all and (max-width: 770px) {
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  a:link {
+    margin: 2%;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/*--------- iPhone Responsiveness -------------*/
+
+@media all and (max-width: 400px) {
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  a:link {
+    margin: 2%;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  h1, h2 {
+    word-wrap: break-word;
+  }
+
+  main {
+    padding: 0px;
+  }
+
+  .navigationBar {
+    font-size: 16px;
+  }
+}

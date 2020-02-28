@@ -64,11 +64,24 @@ Strengths going into the project include my design skills and thuroughness in co
 
 
 Technologies used: 
-
-Approaches taken: 
+-React
+-CSS
+-Better Doctor API
+-Flexbox
+-Responsive design that is scalable to mac, tablet, and mobile
+-Includes hover ability over links
+-loading gif renders while searching for data
+-404 page included when links are mistyped
+-links in the footer open up in a new page instead of rendering over the NutriMate website
+-Unsplash was used for images
+-Giph was used for moving giphy images
+-Surge was used for website hosting
 
 Relevant instructions for viewers: 
+BetterDoc is an app that details provider information to the user. You can type in any provider's name, any location, type of insurance that the user may have, or provider specialty and the page will render further information. There is a basic information page under "Provider Information" and then the user can click the button to display detailed information such as practice addresses and specific insurance plans that are accepted.
 
 Unsolved problems: 
+
+
 
 Link to live site: 

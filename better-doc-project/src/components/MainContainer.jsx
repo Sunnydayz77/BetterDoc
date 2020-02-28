@@ -16,8 +16,7 @@ export default class MainContainer extends Component {
           <div className="home">
 
           </div>
-            {/* <h1>BetterDoc</h1>
-            <h2>A Better Way To Search For Healthcare</h2> */}
+          
             {/* <h3>"Quote" ~Person</h3> */}
           
           </Route>
@@ -27,9 +26,6 @@ export default class MainContainer extends Component {
           <Route path={"/SpecialtyMoreInfo"} component={SpecialtyMoreInfo} /> */}
           <Route exact path={"*"} component={NoMatch} />
         </Switch>
-
-
-        
       </main>
     );
   }
