@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 h1, h2 {
@@ -38,7 +38,6 @@ h1, h2 {
 
 .links {
   text-decoration: none;
-  margin: 2%;
   font-size: 1em;
   align-content: flex-end;
   margin-top: auto;
@@ -62,7 +61,6 @@ a:link {
   margin: 10%;
   color: black;
   justify-content: space-evenly;
-  /* flex-direction: row; */
   align-content: flex-end;
 }
 
@@ -124,6 +122,7 @@ h3, h4, h5, p {
 
 .footer {
   padding: 0px;
+  margin-bottom: 0vh;
   margin: 1% !important;
 }
 

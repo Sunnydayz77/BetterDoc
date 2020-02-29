@@ -16,24 +16,13 @@ const Docs = props => {
 
       {currentDoc.practices &&
         <div className="location">
-        <h3>Practice Locations:</h3>
+          <h3>Practice Locations:</h3>
           {currentDoc.practices.map(practice =>
-            <h5> {practice.visit_address.street}, {practice.visit_address.city}, {practice.visit_address.state} {practice.visit_address.zip} <br></br>
-            {/* Phone number: {practice.phones.number} */}
-            </h5>
+            <h5> {practice.visit_address.street}, {practice.visit_address.city}, {practice.visit_address.state} {practice.visit_address.zip} </h5>
           )}
         </div>
       }
-        
-      {/* {currentDoc.practices &&
-        <div className="location">
-          {currentDoc.practices.map(practice =>
-            <h5>Accepting New Patients? {practice.accepts_new_patients}</h5>
-          )}
-        </div>
-      } */}
 
-      
       {currentDoc.insurances &&
         <div className="insurances">
           <h3>Insurances Accepted:</h3>
@@ -43,7 +32,6 @@ const Docs = props => {
         </div>
       }
       
-
         <div className="specialties">
           <h3>Specialties:</h3>
           {currentDoc.specialties.map(specialty =>

@@ -29,8 +29,9 @@ export default class SpecialtyContainer extends Component {
         const specialties = await Axios.get(
           `https://api.betterdoctor.com/2016-03-01/specialties?fields=${this.state.searchQuery}&user_key=${API_TOKEN}`
         )
-        const specialtyData=specialties.data.data
-        console.log(specialtyData)
+        
+        const specialtyData = specialties.data.data
+        
         this.setState({
           specialties: specialtyData
         })

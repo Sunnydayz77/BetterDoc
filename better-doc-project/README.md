@@ -84,4 +84,4 @@ Unsolved problems:
 2. The data for the specialties API seems to just return the entire list of specialty definitions. You aren't able to search to a specific definition. I will have to scale back my code to either just display all of the specialty information or code it so that it filters through the data after mapping through the data.
 
 
-Link to live site: 
+Link to live site: https://better-doc.netlify.com/
