@@ -61,7 +61,6 @@ a:link {
   margin: 10%;
   color: black;
   justify-content: space-evenly;
-  /* flex-direction: row; */
   align-content: flex-end;
 }
 
@@ -123,6 +122,7 @@ h3, h4, h5, p {
 
 .footer {
   padding: 0px;
+  margin-bottom: 0vh;
   margin: 1% !important;
 }
 

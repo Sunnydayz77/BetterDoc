@@ -13,7 +13,6 @@ export default class MainContainer extends Component {
           <Route exact path={"/"}>
           <div className="home">
           </div>
-            {/* <h3>"Quote" ~Person</h3> */}
           </Route>
 
           <Route path={"/ProviderContainer"} component={ProviderContainer}/>
