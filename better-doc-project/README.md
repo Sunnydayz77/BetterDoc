@@ -6,9 +6,6 @@ But a Baby Yoda gif is much better: https://media.giphy.com/media/Wn74RUT0vjnoU9
 
 ## Project Planning
 
-> – The Project Planning section should be completed for your project pitch with instructors.
-> – To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
 <br>
 
 ### Overview
@@ -18,8 +15,6 @@ _**BetterDoc** is an app that details provider information to the user. Users ca
 <br>
 
 ### Wireframes
-
-> Use the Wireframes section to display desktop, tablet and mobile views.
 
 ![https://marvelapp.com/dhj69hh](https://marvelapp.com/dhj69hh)
 
@@ -41,65 +36,49 @@ _**BetterDoc** is an app that details provider information to the user. Users ca
 
 ### MVP
 
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
 _The **BetterDoc** MVP is to have an app that details provider information to the user based on name, location, insurances accepted, and provider specialty. The provider information tab would list doctor's names, their npi numbers, their locations, and their specialties. Each doctor would have a button for more information that links to a detailed container page._
 
 <br>
 
 #### Goals
 
--_Have a thoroughly developed README.md file._
--_Have an interactice React app, built using create react app._
--_Have detailed provider information to the user as the search via name, location, insurances accepted, or provider specialty._
--_Utilize React Router._
--_Have at least 6 separate, rendered components._
--_Implement an organized and understandable React file structure._
--_Utilize functional and class React components appropriately._
--_Use Axios to consume data from an third party API, and render that data in the components._
--_Use only React for DOM Manipulation._
--_Have styling through CSS._
--_Use flexbox or CSS Grid for rending and styling of provider information._
--_Make sure that the design is scalable and responsive to mac, tablet, and mobile._
--_Have proper indentation._
--_Utilize high-quality, semantic variable names._
--_Follow camelCase and kebab-case conventions._
--_Remove unnecessary boilerplate React files and code._
--_Remove all console.logs and commented out code when submitting project._
--_Have GitHub commits every day._
--_Host the BetterDoc app on Surge or Netlify._
+-_Have a thoroughly developed README.md file._<br>
+-_Have an interactice React app, built using create react app._<br>
+-_Have detailed provider information to the user as the search via name, location, insurances accepted, or provider specialty._<br>
+-_Utilize React Router._<br>
+-_Have at least 6 separate, rendered components._<br>
+-_Implement an organized and understandable React file structure._<br>
+-_Utilize functional and class React components appropriately._<br>
+-_Use Axios to consume data from an third party API, and render that data in the components._<br>
+-_Use only React for DOM Manipulation._<br>
+-_Have styling through CSS._<br>
+-_Use flexbox or CSS Grid for rending and styling of provider information._<br>
+-_Make sure that the design is scalable and responsive to mac, tablet, and mobile._<br>
+-_Have proper indentation._<br>
+-_Utilize high-quality, semantic variable names._<br>
+-_Follow camelCase and kebab-case conventions._<br>
+-_Remove unnecessary boilerplate React files and code._<br>
+-_Remove all console.logs and commented out code when submitting project._<br>
+-_Have GitHub commits every day._<br>
+-_Host the BetterDoc app on Surge or Netlify._<br>
 
 <br>
 
 #### Libraries
 
-> Use this section to list all supporting libraries and their role in the project.
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
-
-Technologies used: 
--React
--CSS
--Better Doctor API
--Flexbox
--Responsive design that is scalable to mac, tablet, and mobile
--Includes hover ability over links
--loading gif renders while searching for data
--404 page included when links are mistyped
--Unsplash was used for images
--Giphy was used for moving giphy images
--Surge was used for website hosting
-
+|      Library      | Description                                                   |
+| :---------------: | :------------------------------------------------------------ |
+| React Router      | _React Router Library._                                       |
+| CSS Tricks        | _For help while styling web app._                             |
+| Better Docter API | _Third party API used to render data into components on app._ |
+| StackOverflow     | _For help while writing functional and class components._     |
+| Unsplash          | _Main header photo._                                          |
+| GIPHY             | _For videos used on main page, loading spinner, and 404 page._|
+| Netlify           | _For deployment of web app._                                  |
 
 <br>
 
 #### Data
-
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
 
 |        API                        | Quality Docs? | Website                               | Sample Query                                                                                                       |
 | :-------------------------------: | :-----------: | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------- |
@@ -110,38 +89,50 @@ Technologies used:
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
-
 ```
-src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
-      |__ Footer.jsx
+BETTER-DOC-PROJECT/
+|__.env
+|__.gitignore
+|__package-lock.json
+|__package.json
+|__README.md
+|__src/
+      |__ App.js
+      |__ App.css
+      |__ index.js
+      |__ index.css
+  |__ components/
+      |__ MainContainer.jsx
+      |__ MainHeader.jsx
+      |__ MainFooter.jsx
+      |__ NoMatch.jsx
+      |__ ProviderContainer.jsx
+      |__ ProviderSearch.jsx
+      |__ ProviderMiniInfo.jsx
+      |__ ProviderDetails.jsx
+      |__ SpecialtyContainer.jsx
+      |__ SpecialtySearch.jsx
+      |__ SpecialtyMoreInfo.jsx
+
 ```
 
 <br>
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|     Component        |    Type    | state | props | Description                                                                       |
+| :------------------: | :--------: | :---: | :---: | :-------------------------------------------------------------------------------- |
+|  Main Container      |   class    |   n   |   n   | _The front page contains all of the routing links_                                |
+|  Main Header         | functional |   n   |   n   | _The header will contain the navigation and main artwork for the app._            |
+|  Main Footer         | functional |   n   |   n   | _The footer will show info about me and a link to the Better Doctor API._         |
+|  No Match            | functional |   n   |   y   | _404 page if users accidentally type in broken links._                            |
+|  Provider Container  | class      |   y   |   y   | _Container for provider information._                                             |
+|  Provider Search     | functional |   n   |   n   | _Search bar/button for provider information._                                     |
+|  Provider MiniInfo   | functional |   n   |   y   | _Container for basic provider information, such as name, npi, and locations._     |
+|  Provider Details    | functional |   n   |   y   | _Name, bio, practice locations, insurances accepted, and specialties of doctors._ |
+|  Specialty Container | class      |   y   |   y   | _Main container for specialty information._                                       |
+|  Specialty Search    | functional |   n   |   n   | _Search bar/button for specialty information._                                    |
+|  Specialty More Info | class      |   n   |   y   | _Container for specialty definitions._                                            |
 
 <br>
 
@@ -157,7 +148,7 @@ src
 
 <br>
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+> Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -181,20 +172,24 @@ _Post MVP, I would create a third navigation link in the header that describes a
 
 #### Post-MVP Goals
 
--_Have another navigation link that defines all of the various specialties that a doctor may have if users wish to understand more about the complexities of specialties in the medical system and are stuck on what to search for._
--_Post another navigation tab that is specifically for practice locations near the user. This link would describe if the practices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours._
--_Create login capabilities so that users can "favorite" and save preferred provider information._
--_Locate and use another API that renders health quotes and helpful information on the front page._
+-_Have another navigation link that defines all of the various specialties that a doctor may have if users wish to understand more about the complexities of specialties in the medical system and are stuck on what to search for._<br>
+-_Post another navigation tab that is specifically for practice locations near the user. This link would describe if the practices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours._<br>
+-_Create login capabilities so that users can "favorite" and save preferred provider information._<br>
+-_Locate and use another API that renders health quotes and helpful information on the front page._<br>
 
 <br>
 
 #### Post-MVP Data
 
--_Specialty Search API endpoint from Better Doctor._
--_Practice Search API endpoint from Better Doctor._
--_Another API that renders health quotes and helpful information on the front page._
+-_Specialty Search API endpoint from Better Doctor._<br>
+-_Practice Search API endpoint from Better Doctor._<br>
+-_Another API that renders health quotes and helpful information on the front page._<br>
 
 <br>
+
+#### SWOT Analysis
+_Strengths going into the project include my design skills and thuroughness in completion of projects. I pride myself in being very detail oriented. Weaknesses and opportunities include learning more about how functions and classes are written in react. Threats include users not taking the happy path and writing in specifc providers in the address bar, which I can account for and create a fix for that during the project._
+
 
 ***
 
@@ -223,42 +218,22 @@ function reverse(string) {
 1.  My provider search is returning extraneous people/information. For instance, if I search for a provider by the name of "Smith" the search will return providers who don't have the name of "Smith", but have "Smith" listed in their bios somewhere.
 2. The data for the specialties API seems to just return the entire list of specialty definitions. You aren't able to search to a specific definition. I will have to scale back my code to either just display all of the specialty information or code it so that it filters through the data after mapping through the data.
 
+### Technologies Used
+
+-_React_<br>
+-_CSS_<br>
+-_Better Doctor API_<br>
+-_Flexbox_<br>
+-_Responsive design that is scalable to laptop, tablet, and mobile_<br>
+-_Includes hover ability over links_<br>
+-_Loading gif renders while searching for data_<br>
+-_404 page included when links are mistyped_<br>
+-_Unsplash was used for images_<br>
+-_Giphy was used for moving giphy images_<br>
+-_Netlify was used for website hosting_<br>
+
 ### Link To Live Site
 
 ![https://better-doc.netlify.com/](https://better-doc.netlify.com/)
 
 ***
-
-
-
-
-
-
-
-
-
-
-
-
-Component Heirarchy: 
-  -Main page
-    |
-    -->Front page with routing links (function and class components)
-
-  -Provider information section
-    |
-    -->search bar/button and container for provider information(utilizing a class component that passes down props to the detailed provider information container)
-
-  -Detailed Provider Information Container
-    |
-    -->Name, speciality, location, insurances accepted, and bio (utilizing props from the class component in the provider information section)
-
-  -Specialty definitions
-    |
-    -->search bar/button that displays all specialty information(utilizing a function component)
-
-
-
-SWOT Analysis: 
-Strengths going into the project include my design skills and thuroughness in completion of projects. I pride myself in being very detail oriented. Weaknesses and opportunities include learning more about how functions and classes are written in react. Threats include users not taking the happy path and writing in specifc providers in the address bar, which I can account for and create a fix for that during the project.
-
