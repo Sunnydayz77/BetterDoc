@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #1F1C1F;
+  background-color: rgb(31, 28, 31);
   word-wrap: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,10 +36,18 @@ h1, h2 {
 
 /*--------- Navigation Bar -------------*/
 
+nav {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  word-wrap: normal;
+}
+
 .links {
   text-decoration: none;
-  font-size: 1em;
-  align-content: flex-end;
   margin-top: auto;
   word-wrap: normal;
 }
@@ -58,31 +66,19 @@ a:visited {
 
 a:link {
   text-decoration: none;
-  margin: 10%;
-  color: black;
-  justify-content: space-evenly;
-  align-content: flex-end;
+  color: rebeccapurple;
+  font-size: 20px;
 }
 
 .navigationBar {
   list-style: none;
 }
 
-nav {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 20px;
-  font-weight: 700;
-  justify-content: space-between;
-  align-content: flex-end;
-  word-wrap: normal;
-}
-
-
 /*--------- Main Section -------------*/
 
 .home {
   background-image: url('https://media.giphy.com/media/l1J9ENegnLn0JxY4g/giphy.gif');
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 h3, h4, h5, p {
@@ -107,8 +103,10 @@ h3, h4, h5, p {
 
 /*--------- Search Bar -------------*/
 
-
-
+button {
+  background-color: rgb(31, 28, 31);
+  color: rgb(255, 255, 255);
+}
 
 /*--------- 404 Page -------------*/
 
@@ -120,15 +118,12 @@ h3, h4, h5, p {
 
 /*--------- Footer -------------*/
 
-.footer {
-  padding: 0px;
-  margin-bottom: 0vh;
-  margin: 1% !important;
-}
-
 .footerMargin {
   padding: 20px;
-  flex: end;
+}
+
+.footer {
+  margin: 1% !important;
 }
 
 
@@ -148,10 +143,14 @@ h3, h4, h5, p {
     flex-direction: column;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
   h1, h2 {
-    font-size: 20px;
     flex-wrap: wrap;
   }
+
 }
 
 /*--------- iPhone Responsiveness -------------*/
@@ -164,10 +163,15 @@ h3, h4, h5, p {
 
   a:link {
     margin: 2%;
+    font-size: 12px;
   }
 
   .links {
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   h1, h2 {
@@ -180,5 +184,9 @@ h3, h4, h5, p {
 
   .navigationBar {
     font-size: 16px;
+  }
+
+  .loadingSpinner {
+    max-width: 50%;
   }
 }
