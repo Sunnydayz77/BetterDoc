@@ -10,7 +10,7 @@ But a Baby Yoda gif is much better: https://media.giphy.com/media/Wn74RUT0vjnoU9
 
 ### Overview
 
-_**BetterDoc** is an app that details provider information to the user. Users can type in any provider's name, any location, type of insurance that the user may have, or provider specialty and the page will render further information. There is a basic information page under "Provider Information" and then the user can click the button to display detailed information such as practice addresses and specific insurance plans that are accepted. Better Doctor API was used for data retrieval. The app is responsive to laptops, tablets, and mobile versions. The app also ncludes hover ability over links, a loading gif that renders while searching for data, and a 404 page when links are mistyped._
+_**BetterDoc** is an app that details provider information to the user. Users can type in any provider's name, any location, type of insurance that the user may have, or provider specialty and the page will render further information. There is a basic information page under "Provider Information" and then the user can click the button to display detailed information such as practice addresses and specific insurance plans that are accepted. Better Doctor API was used for data retrieval. The app is responsive to laptops, tablets, and mobile versions. The app also includes hover ability over links, a loading gif that renders while searching for data, and a 404 page when links are mistyped._
 
 <br>
 
