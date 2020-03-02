@@ -261,8 +261,6 @@ export default ProviderMiniInfo
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
-
 | Error                                                                 | Resolution                                             |
 | :-------------------------------------------------------------------- | :----------------------------------------------------- |
 | `ProviderContainer.jsx:39 Error: Request failed with status code 401` | API issues and broken image link issues                |
