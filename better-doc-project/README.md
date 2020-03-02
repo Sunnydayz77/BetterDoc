@@ -202,24 +202,77 @@ _Strengths going into the project include my design skills and thuroughness in c
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+//Better Doctor API had an extremely nested and complex data set, plus there were images that had broken links that I had to work around. Lots of mapping was needed to retrieve and display the various data points.//
+
+const ProviderMiniInfo = ({ docs }) => {
+  function addDefaultSource(event) {
+  event.target.src = 'https://i.ya-webdesign.com/images/caring-clipart-primary-care-physician-15.png'
+  }
+  return (
+  <>  
+    {
+      docs.length > 0 &&
+  
+        (docs.map((doc, index) => {
+      
+        return (
+        <>
+          <div key={index} className="doc-card">
+            
+            <img src={doc.profile.image_url} alt="provider picture" onError={addDefaultSource} className="providerPic"/> 
+
+            <h3 className="name">{doc.profile.first_name} {doc.profile.middle_name} {doc.profile.last_name}, {doc.profile.title}</h3>
+            
+            <h3>NPI: {doc.npi}</h3>
+
+            
+            {doc.practices &&
+              <div className="location">
+              <h3>Practice Locations: </h3>
+                {doc.practices.map(practice =>
+                  <h5>{practice.visit_address.city}, {practice.visit_address.state} {practice.visit_address.zip}</h5>
+                )}
+              </div>
+            }
+
+            <div className="specialties">
+            <h3>Specialties:</h3>
+            {doc.specialties.map(specialty =>
+              <h5>{specialty.name}</h5>
+              )}
+            </div>
+        
+            
+            <Link to={`/ProviderContainer/details/${doc.uid}`}>
+              <button>More Information</button>
+            </Link>
+          </div>
+        </>
+      )
+    })
+    )
+  }
+</>
+)}
+  
+export default ProviderMiniInfo
 ```
 
 ### Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution.
 
-| Error                                                   | Resolution                                             |
-| :------------------------------------------------------ | :----------------------------------------------------- |
-| `app.js:34 Uncaught SyntaxError: Unexpected identifier` | Missing comma after first object in sources {} object. |
+| Error                                                                 | Resolution                                             |
+| :-------------------------------------------------------------------- | :----------------------------------------------------- |
+| `ProviderContainer.jsx:39 Error: Request failed with status code 401` | API issues and broken image link issues                |
+| `backend.js:6 Error: Request failed with status code 400`             | Backend API issues and broken image link issues        |
 
-1.  My provider search is returning extraneous people/information. For instance, if I search for a provider by the name of "Smith" the search will return providers who don't have the name of "Smith", but have "Smith" listed in their bios somewhere.
-2. The data for the specialties API seems to just return the entire list of specialty definitions. You aren't able to search to a specific definition. I will have to scale back my code to either just display all of the specialty information or code it so that it filters through the data after mapping through the data.
+
+### Unsolved Issues
+
+_1. My provider search is returning extraneous people/information. For instance, if I search for a provider by the name of "Smith" the search will return providers who don't have the name of "Smith", but have "Smith" listed in their bios somewhere._<br>
+_2. The data for the specialties API seems to just return the entire list of specialty definitions. You aren't able to search to a specific definition. I will have to scale back my code to either just display all of the specialty information or code it so that it filters through the data after mapping through the data._<br>
 
 ### Technologies Used
 
