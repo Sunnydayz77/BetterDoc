@@ -138,33 +138,38 @@ BETTER-DOC-PROJECT/
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-<br>
-
-> Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Task                | Priority | Estimated Time | Actual Time |
+| ------------------- | :------: | :------------: | :---------: |
+| Wireframe           |    H     |     2 hrs      |    5 hrs    |
+| Initial Readme file |    H     |     2 hrs      |    3 hrs    |
+| Header              |    H     |     3 hrs      |    3 hrs    |
+| Footer              |    H     |     2 hrs      |    1 hr     |
+| 404 Page            |    L     |     1 hr       |    30 min   |
+| Provider container  |    H     |     5 hrs      |    8 hrs    |
+| Provider search     |    H     |     2 hrs      |    1 hr     |
+| Broken link icon    |    M     |     2 hrs      |    3 hrs    |
+| Loading spinner     |    L     |     1 hr       |    3 hrs    |
+| Provider basic info |    H     |     2 hrs      |    4 hrs    |
+| Provider details    |    H     |     2 hrs      |    3 hrs    |
+| Specialty contianer |    L     |     2 hrs      |    3 hrs    |
+| Specialty search    |    L     |     1 hr       |    30 min   |
+| Specialty info      |    L     |     2 hrs      |     TBD     |
+| Final Readme file   |    H     |     2 hrs      |    7 hrs!!  |
+| TOTAL               |          |     6 hrs      |45 hrs so far|
 
 <br>
 
 #### Helper Functions
 
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
-
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
+| Footer     | _Footer function with links._              |
+| 404 Page   | _No match page function._                  |
+| Search Bar | _Search bar with input and submit button_  |
 
 <br>
 
 ### Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 _Post MVP, I would create a third navigation link in the header that describes all of the various specialties that a doctor may have if users wish to understand more about the complexities of specialties in the medical system and if they're stuck on what to search for. I hope to also make a navigation tab that is specifically for doctor's offices near the user. This link would describe if the offices are accepting new patients as well as what insurances are accepted, phone numbers, and office hours. Post-post MVP, I plan to make a feature where users can login and save providers/practices so they can have an address book all in one place for future reference. There would also be helpful health quotes that would cycle through on the front page with an additional quotes API._ 
 
@@ -194,8 +199,6 @@ _Strengths going into the project include my design skills and thuroughness in c
 ***
 
 ## Project Delivery
-
-> The Delivery section should be expanded and revised as you work on your project.
 
 ### Code Showcase
 
