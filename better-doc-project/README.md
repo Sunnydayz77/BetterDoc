@@ -1,8 +1,10 @@
 # **BetterDoc**
 
-Funny cheetah gif: https://gph.is/28PqX3U
+Funny cheetah gif:<br>
+![Funny cheetah gif](https://media.giphy.com/media/Nh1vXTd393E6k/giphy.gif)<br>
 
-But a Baby Yoda gif is much better: https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif
+But a Baby Yoda gif is much better:<br>
+![Baby Yoda gif](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)<br>
 
 ## Project Planning
 
@@ -16,21 +18,20 @@ _**BetterDoc** is an app that details provider information to the user. Users ca
 
 ### Wireframes
 
-![https://marvelapp.com/dhj69hh](https://marvelapp.com/dhj69hh)
+- Pre-project wireframe and interactive display on Marvel App: <br>
+https://marvelapp.com/dhj69hh<br>
 
-- Pre-project wireframe and interactive display on Marvel App
 
-![https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=768](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=768)
+- Desktop Resource Index:<br>
+https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=768 <br>
 
-- Desktop Resource Index
 
-![https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=1024](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=1024)
+- Tablet Resource Index:<br>
+https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=1366&height=1024 <br>
 
-- Tablet Resource Index
 
-![https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=375&height=667](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=375&height=667)
-
-- Mobile Resource Index
+- Mobile Resource Index:<br>
+https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbetter-doc.netlify.com%2F&width=375&height=667<br>
 
 <br>
 
@@ -288,6 +289,6 @@ _2. The data for the specialties API seems to just return the entire list of spe
 
 ### Link To Live Site
 
-![https://better-doc.netlify.com/](https://better-doc.netlify.com/)
+https://better-doc.netlify.com/<br>
 
 ***
