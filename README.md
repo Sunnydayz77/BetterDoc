@@ -1,7 +1,7 @@
 # **BetterDoc**
 
 Funny cheetah gif:<br>
-![Funny cheetah gif](https://gph.is/28PqX3U)<br>
+![Funny cheetah gif](https://media.giphy.com/media/Nh1vXTd393E6k/giphy.gif)<br>
 
 But a Baby Yoda gif is much better:<br>
 ![Baby Yoda gif](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)<br>
