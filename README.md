@@ -194,7 +194,7 @@ _Post MVP, I would create a third navigation link in the header that describes a
 <br>
 
 #### SWOT Analysis
-_Strengths going into the project include my design skills and thuroughness in completion of projects. I pride myself in being very detail oriented. Weaknesses and opportunities include learning more about how functions and classes are written in react. Threats include users not taking the happy path and writing in specifc providers in the address bar, which I can account for and create a fix for that during the project._
+_Strengths going into the project include my design skills and thoroughness in completion of projects. I pride myself on being very detail-oriented. Weaknesses and opportunities include learning more about how functions and classes are written in react. Threats include users not taking the happy path and writing in specific providers in the address bar, which I can account for and create a fix for that during the project._
 
 
 ***
